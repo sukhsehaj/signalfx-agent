@@ -18,4 +18,4 @@
     name: signalfx-agent{% if sfx_version is defined and sfx_version != "latest" %}-{{ sfx_version }}{% endif %}
     state: "{% if sfx_version is defined and sfx_version != 'latest' %}present{% else %}{{ sfx_version }}{% endif %}"
     allow_downgrade: yes
-    update_cache: yes
+    update_cache: yes.
